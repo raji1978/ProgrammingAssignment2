@@ -1,3 +1,5 @@
+##the makecachematrix function used to create a matrix and get it inverse . 
+##initially inverse of the matrix is set to null.
 makeCacheMatrix <- function(x = matrix()) {
   j <- NULL
   set <- function(y){
@@ -12,7 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverse = getInverse)
 }
 
-##Please include your own comment to explain your code (Required in Rubric)
+##After invoking cachesolve function the inverse of the matrix is get cached
+##and returned from the cache during the second invokation
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
